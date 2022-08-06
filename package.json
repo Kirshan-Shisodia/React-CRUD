@@ -1,5 +1,6 @@
 {
   "name": "curd",
+  "homepage": "https://Kirshan-Shisodia.github.io/React-CRUD",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,6 +19,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "json-server": "json-server --watch src/DataBase/db.json --host 127.0.0.1 --port 3003",
     "dev": "concurrently \"npm start\" \"npm run json-server\"",
     "build": "react-scripts build",
